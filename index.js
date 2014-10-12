@@ -1,7 +1,10 @@
 'use strict';
 var Filter = require('broccoli-filter');
 var RSVP = require('rsvp');
-var stylus = require('stylus');
+
+var codependency = require('codependency');
+var requirePeer = codependency.register(module, { index: ['peerDependencies'] });
+var stylus = requirePeer('stylus', { optional: true }) || require('stylus');
 
 function StylusFilter(inputTree, options) {
 	if (!(this instanceof StylusFilter)) {
