@@ -18,7 +18,7 @@ StylusFilter.prototype.constructor = StylusFilter;
 StylusFilter.prototype.extensions = ['styl'];
 StylusFilter.prototype.targetExtension = 'css';
 
-StylusFilter.prototype.processString = function (str) {
+StylusFilter.prototype.processString = function (str, filename) {
 	var opts = this.options;
 	var s = stylus(str);
 
@@ -50,6 +50,9 @@ StylusFilter.prototype.processString = function (str) {
 		Object.keys(opts.set).forEach(function (key) {
 			s.set(key, opts.set[key]);
 		});
+
+		var path = require('path');
+		s.set('filename', path.join(this.options.root, filename));
 	}
 
 	if (opts.define) {

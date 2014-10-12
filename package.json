@@ -3,7 +3,10 @@
   "version": "1.2.0",
   "description": "Compile Stylus",
   "license": "MIT",
-  "repository": "sindresorhus/broccoli-stylus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sindresorhus/broccoli-stylus"
+  },
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
@@ -35,5 +38,35 @@
     "broccoli-cli": "0.0.1",
     "mocha": "*",
     "rimraf": "^2.2.6"
-  }
+  },
+  "peerDependencies": {
+    "stylus": "*"
+  },
+  "gitHead": "7a9df13afac738b2278274327fbd0c9f66218919",
+  "bugs": {
+    "url": "https://github.com/sindresorhus/broccoli-stylus/issues"
+  },
+  "homepage": "https://github.com/sindresorhus/broccoli-stylus",
+  "_id": "broccoli-stylus@1.2.0",
+  "_shasum": "07966e9b82736e4e2b6dfdc2247319ffe8112ac8",
+  "_from": "broccoli-stylus@",
+  "_npmVersion": "2.0.2",
+  "_nodeVersion": "0.10.32",
+  "_npmUser": {
+    "name": "sindresorhus",
+    "email": "sindresorhus@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "sindresorhus",
+      "email": "sindresorhus@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "07966e9b82736e4e2b6dfdc2247319ffe8112ac8",
+    "tarball": "http://registry.npmjs.org/broccoli-stylus/-/broccoli-stylus-1.2.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/broccoli-stylus/-/broccoli-stylus-1.2.0.tgz",
+  "readme": "ERROR: No README data found!"
 }
